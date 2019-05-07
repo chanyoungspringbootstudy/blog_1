@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="stylesheet.css" rel="stylesheet"/>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="container">
+    DGSW Blog
+</header>
+<aside class="container left-container">
+    <a>새 글 쓰기</a>
+    <hr>
+    최근 글
+    <div id="post-preview">
+
+    </div>
+</aside>
+<aside class="container right-container" style="text-align: center;">
+    <input type="text" placeholder="작성자" style="font-size: 20px;width: 190px;">
+</aside>
+<section id="main-container" class="container">
+    <div class="content">
+    </div>
+    <div class="content-buttons">
+        <button id="btn-previous" onclick="getPost()">이전</button>
+        <button id="btn-modify" onclick="updatePost()">수정</button>
+        <button id="btn-delete" onclick="removePost()">삭제</button>
+        <button id="btn-next" onclick="getPost()">다음</button>
+    </div>
+</section>
+<footer class="container">
+    FOOTER
+</footer>
+<script>listPost()</script>
+</body>
+</html>
